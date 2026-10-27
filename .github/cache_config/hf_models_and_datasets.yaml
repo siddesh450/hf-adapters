@@ -4,7 +4,15 @@ models:
   - ibm-granite/granite-3.3-2b-instruct                         # granite2b
   - ibm-granite/granite-4.0-1b-base                             # granite4
   - ibm-granite/granite-4.0-1b                                  # granite4_instruct
-  # Embedding models
+  - ibm-granite/granite-4.1-3b                                  # granite41_3b
+  - ibm-granite/granite-4.1-8b                                  # granite41_8b
+  # Embedding & Encoder models
+  - google-bert/bert-base-uncased                               # bert_mlm
+  - google-bert/bert-large-uncased                              # bert_large_mlm
+  - deepset/bert-base-uncased-squad2                            # bert_base_uncased_qa
+  - deepset/bert-large-uncased-whole-word-masking-squad2        # bert_large_uncased_qa
+  - deepset/roberta-base-squad2                                 # roberta_qa
+  - deepset/roberta-large-squad2                                # roberta_large_qa
   - BAAI/bge-base-en-v1.5                                       # bge_base (embed-compare)
   - BAAI/bge-m3                                                 # bge_m3 (load)
   # VLM / vision models (tests/spyre/test_vlm_e2e_spyre.py, suite key "vlm")

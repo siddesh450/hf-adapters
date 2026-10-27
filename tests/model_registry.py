@@ -116,6 +116,13 @@ CAUSAL_LM_MODELS = {
         "adapter": "hf_granitemoehybrid.py",
         "size": "3b",
     },
+    "granite41_3b": {
+        "name": "Granite 4.1 3B",
+        "path": "ibm-granite/granite-4.1-3b",
+        "adapter": "hf_granitemoehybrid.py",
+        "size": "3b",
+        "always_test": True,
+    },
     "granite41_8b": {
         "name": "Granite 4.1 8B",
         "path": "ibm-granite/granite-4.1-8b",
@@ -551,11 +558,32 @@ QUESTION_ANSWERING_MODELS = {
         "adapter": "hf_bert.py",
         "size": "0.1b",
     },
+    "bert_base_uncased_qa": {
+        "name": "BERT base uncased SQuAD 2",
+        "path": "deepset/bert-base-uncased-squad2",
+        "adapter": "hf_bert.py",
+        "size": "0.1b",
+        "always_test": True,
+    },
+    "bert_large_uncased_qa": {
+        "name": "BERT large uncased SQuAD 2",
+        "path": "deepset/bert-large-uncased-whole-word-masking-squad2",
+        "adapter": "hf_bert.py",
+        "size": "0.3b",
+        "always_test": True,
+    },
     "roberta_qa": {
         "name": "RoBERTa base SQuAD 2",
         "path": "deepset/roberta-base-squad2",
         "adapter": "hf_xlm_roberta.py",
         "size": "0.1b",
+    },
+    "roberta_large_qa": {
+        "name": "RoBERTa large SQuAD 2",
+        "path": "deepset/roberta-large-squad2",
+        "adapter": "hf_xlm_roberta.py",
+        "size": "0.3b",
+        "always_test": True,
     },
     # hf_distilbert.py
     "distilbert_qa_uncased": {
@@ -579,6 +607,13 @@ MASKED_LM_MODELS = {
         "path": "google-bert/bert-base-uncased",
         "adapter": "hf_bert.py",
         "size": "0.1b",
+    },
+    "bert_large_mlm": {
+        "name": "BERT large uncased",
+        "path": "google-bert/bert-large-uncased",
+        "adapter": "hf_bert.py",
+        "size": "0.3b",
+        "always_test": True,
     },
     "modernbert_mlm": {
         "name": "ModernBERT base",
